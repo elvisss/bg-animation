@@ -4,19 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
     <link rel="stylesheet" href="./index.css">
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #root {
+            height: 100vh;
+            overflow: auto;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .border {
+            border: 3px solid white;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .m-y {
+            margin: 100px 0;
+        }
+
+        #carousel {
+            height: 500px;
+        }
+
+        #servicios {
+            height: 800px;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
-        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
     </div>
+
+    <div id="root">
+        <div class="container">
+            <div id="carousel" class="border"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti, non ducimus nam aut accusamus ab iusto debitis voluptas omnis delectus sunt cumque quos impedit velit ipsum blanditiis quae enim!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur. In reprehenderit, nulla unde error officiis odit accusamus eaque? Quae, harum ea? Laudantium earum illum veniam fugit alias dolores provident.</p>
+            <div id="servicios" class="border bg-red"></div>
+            <div id="servicios" class="border"></div>
+            <div id="servicios" class="border m-y"></div>
+            <div id="servicios" class="border"></div>
+            <div id="servicios" class="border"></div>
+        </div>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 </html>

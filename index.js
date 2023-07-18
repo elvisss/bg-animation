@@ -37,7 +37,6 @@
       }
     }
 
-    console.log({ points })
 
     // for each point find the 5 closest points
     for (var i = 0; i < points.length; i++) {
